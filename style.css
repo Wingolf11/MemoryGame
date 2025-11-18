@@ -8,7 +8,7 @@
 
 	/* Text palette */
 	--button-txt: #58b4db; /* White for good contrast on colored buttons */
-	--primary-txt-color: #333333; /* Soft dark gray for readability without harshness */
+	--primary-txt-color: #5368c5; /* Soft dark gray for readability without harshness */
 }
 
 * {
@@ -16,6 +16,10 @@
 	font-family: "Luckiest Guy", cursive;
 	letter-spacing: 0.13rem;
 	margin: 0%;
+}
+
+*:focus {
+	outline: 2px solid #f7a278;
 }
 
 body {
@@ -33,6 +37,10 @@ body {
 
 .subtitle {
 	color: var(--third);
+}
+
+.github {
+	color: var(--primary-txt-color);
 }
 
 /*INSIDE BODY*/
@@ -64,8 +72,13 @@ hgroup {
 
 .footer {
 	height: 5rem;
+	padding: 8px;
 	box-shadow: 0px -5px 5rem var(--forth);
 	background-color: var(--forth);
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: space-around;
 }
 
 /*BUTTONS*/
@@ -112,6 +125,6 @@ hgroup {
 
 /*FOOTER*/
 img[alt="github"] {
-	height: 3rem;
-	width: 3rem;
+	height: 2.5rem;
+	width: 2.5rem;
 }

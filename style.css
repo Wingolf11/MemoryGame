@@ -59,7 +59,7 @@ section.hero {
 	align-items: center;
 	justify-content: center;
 	min-height: calc(100vh - 5rem);
-	background-image: url("./assets/Hero-bg.jpg");
+	background-image: url("./assets/Hero-bg-min.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -125,7 +125,7 @@ hgroup {
 
 .play-btn:hover {
 	transform: translateY(-4px);
-    box-shadow: 0 0 2rem var(--fifth);
+	box-shadow: 0 0 2rem var(--fifth);
 }
 
 .play-btn:active {

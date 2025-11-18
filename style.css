@@ -33,10 +33,20 @@ body {
 .header {
 	color: var(--fifth);
 	text-shadow: 0 3px 6px rgba(0, 0, 0, 0.35), 0 6px 12px rgba(0, 0, 0, 0.25);
+	font-size: clamp(3rem, 8vw, 6rem); /* Smoothly scales between 3rem and 6rem */
+	text-align: center;
+	transition: color 0.3s ease;
 }
 
 .subtitle {
 	color: var(--third);
+	font-size: clamp(
+		1.5rem,
+		4vw,
+		3rem
+	); /* Smoothly scales between 3rem and 6rem */
+	text-align: center;
+	transition: color 0.3s ease;
 }
 
 .github {
@@ -115,6 +125,7 @@ hgroup {
 
 .play-btn:hover {
 	transform: translateY(-4px);
+    box-shadow: 0 0 2rem var(--fifth);
 }
 
 .play-btn:active {
@@ -127,4 +138,19 @@ hgroup {
 img[alt="github"] {
 	height: 2.5rem;
 	width: 2.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+	.header {
+		font-size: 10rem;
+	}
+
+	.subtitle {
+		font-size: 6rem;
+	}
+
+	.play-btn {
+		padding: 18px 36px;
+		font-size: 64px;
+	}
 }

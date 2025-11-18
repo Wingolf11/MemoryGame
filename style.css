@@ -1,14 +1,14 @@
 :root {
-	/*Color palette:*/
-	--first: #46b1c9;
-	--second: #33658a;
-	--third: #70b77e;
-	--forth: #f6ae2d;
-	--fifth: #f26419;
+	/* Ultra-friendly, colorblind-safe palette */
+	--first: #6ec1e4; /* Soft sky blue */
+	--second: #f7a278; /* Warm peachy orange */
+	--third: #8ed081; /* Gentle fresh green */
+	--forth: #ffe082; /* Light, sunny yellow */
+	--fifth: #f28c8c; /* Soft coral pink */
 
-	/*Text palette:*/
-	--button-txt: #3a7085;
-	--primary-txt-color: #3b2b00;
+	/* Text palette */
+	--button-txt: #58b4db; /* White for good contrast on colored buttons */
+	--primary-txt-color: #333333; /* Soft dark gray for readability without harshness */
 }
 
 * {

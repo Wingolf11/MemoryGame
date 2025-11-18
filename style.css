@@ -140,7 +140,7 @@ img[alt="github"] {
 	width: 2.5rem;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1400px) {
 	.header {
 		font-size: 10rem;
 	}

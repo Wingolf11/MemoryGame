@@ -1,14 +1,14 @@
 :root {
-	/* Ultra-friendly, colorblind-safe palette */
-	--first: #6ec1e4; /* Soft sky blue */
-	--second: #f7a278; /* Warm peachy orange */
-	--third: #8ed081; /* Gentle fresh green */
-	--forth: #ffe082; /* Light, sunny yellow */
-	--fifth: #f28c8c; /* Soft coral pink */
+	/*Color-blinnd friendly palette:*/
+	--first: #6ec1e4;
+	--second: #f7a278;
+	--third: #8ed081;
+	--forth: #ffe082;
+	--fifth: #f28c8c;
 
 	/* Text palette */
-	--button-txt: #58b4db; /* White for good contrast on colored buttons */
-	--primary-txt-color: #5368c5; /* Soft dark gray for readability without harshness */
+	--button-txt: #58b4db;
+	--primary-txt-color: #5368c5;
 }
 
 * {
@@ -28,33 +28,13 @@ body {
 	background-color: var(--forth);
 }
 
-/*Colors:*/
-
-.header {
-	color: var(--fifth);
-	text-shadow: 0 3px 6px rgba(0, 0, 0, 0.35), 0 6px 12px rgba(0, 0, 0, 0.25);
-	font-size: clamp(3rem, 8vw, 6rem); /* Smoothly scales between 3rem and 6rem */
-	text-align: center;
-	transition: color 0.3s ease;
-}
-
-.subtitle {
-	color: var(--third);
-	font-size: clamp(
-		1.5rem,
-		4vw,
-		3rem
-	); /* Smoothly scales between 3rem and 6rem */
-	text-align: center;
-	transition: color 0.3s ease;
-}
-
-.github {
-	color: var(--primary-txt-color);
+/*Hide element:*/
+.hidden {
+	display: none;
 }
 
 /*INSIDE BODY*/
-section.hero {
+section#hero {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -80,6 +60,23 @@ hgroup {
 	align-items: center;
 }
 
+/*Hero section - Title*/
+.header {
+	color: var(--fifth);
+	text-shadow: 0 3px 6px rgba(0, 0, 0, 0.35), 0 6px 12px rgba(0, 0, 0, 0.25);
+	font-size: clamp(3rem, 8vw, 6rem);
+	text-align: center;
+	transition: color 0.3s ease;
+}
+
+.subtitle {
+	color: var(--third);
+	font-size: clamp(1.5rem, 4vw, 3rem);
+	text-align: center;
+	transition: color 0.3s ease;
+}
+
+/*Footer*/
 .footer {
 	height: 5rem;
 	padding: 8px;
@@ -89,6 +86,10 @@ hgroup {
 	flex-direction: column-reverse;
 	align-items: center;
 	justify-content: space-around;
+}
+
+.github {
+	color: var(--primary-txt-color);
 }
 
 /*BUTTONS*/

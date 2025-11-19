@@ -30,7 +30,7 @@ body {
 
 /*Hide element:*/
 .hidden {
-	display: none;
+	display: none !important;
 }
 
 /*INSIDE BODY*/
